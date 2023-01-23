@@ -87,3 +87,11 @@ style="background-image: url('/img/background.jpg')">
 ## 更新
 
 本项目会与Next项目保持同步更新（大概......如果没出啥事的话......
+
+## 鸣谢
+
+感谢Akilarの糖果屋的各位群友们给予的帮助和支持
+
+特别感谢Akilarの糖果屋的 空巷一人 帮我解决网页排版问题
+
+感谢Next和Butterfly给我的灵感
