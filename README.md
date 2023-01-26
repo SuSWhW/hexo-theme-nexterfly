@@ -4,7 +4,9 @@
 
 ## 关于主题
 
-该主题是Next主题和Butterfly主题缝合的产物，所以这玩意儿本质上就是个缝合怪。
+该主题基于[Next8](https://github.com/next-theme/hexo-theme-next)和[Butterfly](https://github.com/jerryc127/hexo-theme-butterfly)
+
+从根本上来说Nexterfly是Next主题和Butterfly主题缝合的产物，所以这玩意儿本质上就是个缝合怪。
 
 我制作这个主题是因为不习惯Next没有一个全屏着陆页，所以才缝合这两个主题，主题为自用，不喜勿喷。
 

@@ -1,44 +1,44 @@
-// CSS Style Guide: http://codeguide.co/#css
+// CSS Style Guide: https://codeguide.co/#css
 
+// https://stylus-lang.com/docs/keyframes.html
+vendors = official;
 
-$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
-
-$variables = base $scheme;
+$scheme = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
 
 
 // Variables Layer
 // --------------------------------------------------
-for $variable in $variables
-  @import "_variables/" + $variable;
+@import '_variables/base';
+@import '_variables/' + $scheme;
 for $inject_variable in hexo-config('injects.variable')
   @import $inject_variable;
 
 // Mixins Layer
 // --------------------------------------------------
-@import "_mixins.styl";
+@import '_mixins';
 for $inject_mixin in hexo-config('injects.mixin')
   @import $inject_mixin;
 
 // Dark mode colors
 // --------------------------------------------------
-@import "_colors.styl";
+@import '_colors';
 
 // Common Layer
 // --------------------------------------------------
 
 // Scaffolding
-@import "_common/scaffolding";
+@import '_common/scaffolding';
 
 // Layout
-@import "_common/outline";
+@import '_common/outline';
 
 // Components
-@import "_common/components";
+@import '_common/components';
 
 
 // Schemes Layer
 // --------------------------------------------------
-@import "_schemes/" + $scheme;
+@import '_schemes/' + $scheme;
 
 
 // Custom Layer
@@ -49,10 +49,11 @@ for $inject_style in hexo-config('injects.style')
 //自定义背景
 // --------------------------------------------------
 body {
-  background: url(/images/background2.jpg);  
+  background: url(/images/background6.jpg);  
+  background-size: 1600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 30% 30%;
+  background-position: 50% 50%;
   color: var(--text-color);
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
@@ -61,12 +62,6 @@ body {
 
 //设置圆角
 // --------------------------------------------------
-
-// 侧边标题栏
-.header-inner {
-  border-radius: 20px 20px 20px 20px; //边框圆角
-  opacity: 0.85;
-}
 
 //第一个文章
 .post-block {
@@ -86,19 +81,8 @@ body {
 //设置透明
 // --------------------------------------------------
 
-// 侧边标题栏
-.header-inner {
-  opacity: 0.85;
-}
-
-// 侧边头像栏
-//.sidebar{
-//  transition-duration: 0.4s;  
-//  opacity: 0.85;  // 透明度
-//}
-
 // 中心文章栏
-.content {
+.main-inner {
   padding-top: 15px;
   opacity: 0.9;
 }
