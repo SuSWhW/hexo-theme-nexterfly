@@ -6,7 +6,6 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.njk', {}, {cache: theme.cache.enable}) }}
   {{- next_inject('head') }}
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "87c9b7f9ab404af1a750443261226d3c"}'></script>
   <noscript>
     <link rel="stylesheet" href="{{ url_for(theme.css) }}/noscript.css">
   </noscript>

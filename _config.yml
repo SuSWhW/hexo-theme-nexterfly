@@ -155,7 +155,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/suswhw || fab fa-github
+  #GitHub: https://github.com/yourname || fab fa-github
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -474,11 +474,11 @@ exturl_icon: true
 
 # Google Webmaster tools verification.
 # See: https://developers.google.com/search
-google_site_verification: UtVNLnYkEUV3XbwenG_8S-ctRXTS4I78xUa36Ke9LxM
+google_site_verification: 
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmasters
-bing_site_verification: 7CC6B68853F5B1DCE781903F47941AEF
+bing_site_verification: 
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
